@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8"> 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i,600i,700i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../common.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../category-products/style.scss">
+  <title>DLK</title>
+</head>
+<body>
+  
+
+<header class="main-header header container">
+  <a href="/">
+    <img class="header__logo" src="../../static/images/DLK.png"  alt="logo">
+   </a>
+   <button class="header__menu header__menu_js" href="#">Menu</button>
+  <nav class="header__nav">
+    
+    <ul class="header__list-link"> 
+     <li><a class="header__nav-item" href="../../pages/fourth/index.html">Blog</a></li>
+     <li><a class="header__nav-item" href="../../pages/category-products/index.html">Catalog</a></li>
+     <li><a class="header__nav-item" href="../../pages/contact-us/index.html">About Us</a></li>
+     <li><a class="header__nav-item" href="../../pages/catalog/index.html">Toy for kids</a></li>
+     <li><a class="header__nav-item" href="../../pages/animation/index.html">Animation</a></li>
+     <li><a class="header__nav-item" href="../../pages/SVG/index.html">Svg</a></li>
+     <li><a class="header__nav-item" href="../../pages/grid/index.html">Grid</a></li>
+     
+    </ul>
+   <div class ="header__search-contact"> 
+    
+    <a href="#" class="header__search-logo">
+      <img class="header__list-link-conact" src="../../static/images/search.png" alt="search">
+    </a>
+    <a class="header__nav-item-contact" href="../../pages/contact-us/index.html">Contact Us</a> 
+   </div>        
+    
+  </nav>   
+ 
+</header>
+<header class="mobile-header">
+  <div class="mobile-header__content">  
+    <div class="mobile-header__navigation">
+      
+    <a href="#">
+      <img class="header__logo" src="../../static/images/DLK.png"  alt="logo">
+     </a> 
+
+    <button class="mobile-header__button-close mobile-header__button-close_js">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.707105 0L0 0.707105L7.07111 7.77821L4.6869e-05 14.8493L0.707151 15.5564L7.77821 8.48532L14.8492 15.5563L15.5563 14.8492L8.48532 7.77821L15.5563 0.707178L14.8492 7.33696e-05L7.77821 7.07111L0.707105 0Z" fill="#1E0606"/>
+        </svg>        
+    </button>  
+    
+    <a href="#" class="header__search-logo">
+      <img class="header__list-link-conact" src="../../static/images/search.png" alt="search">
+    </a> 
+      
+  </div>
+  <div class="mobile-header__menu">
+  
+  
+    <a class="mobile-header__menu__font" href="../../pages/fourth/index.html">Blog</a>
+    <a class="mobile-header__menu__font" href="../../pages/category-products/index.html">Catalog</a>
+    <a class="mobile-header__menu__font" href="../../pages/contact-us/index.html">About Us</a>
+    <a class="mobile-header__menu__font" href="../../pages/catalog/index.html">Toy for kids</a>
+    <a class="mobile-header__menu__font" href="../../pages/animation/index.html">Animation</a>
+    <a class="mobile-header__menu__font" href="../../pages/SVG/index.html">Svg</a>
+    <a class="mobile-header__menu__font" href="../../pages/contact-us/index.html">Grid</a>
+    
+    <a class="mobile-header__menu__font__contact-us" href="../../pages/contact-us/index.html">Contact Us</a> 
+</div>
+
+  </div>
+</header>
+  <section class="category-products container">
+    <h3 class="category-title-second container"> Contact Us </h3>
+  
+    <div class="">
+    <ul class="vector-button-head">
+      <li><a class="nav-vector-button-home" href="index.html">Home</a></li>
+      <li>
+      <img class="vector" src="../../static/images/Vector-(Stroke).png" alt="right">
+      </li>
+      <li><a class="nav-vector-button-catalog" href="#">Contact Us</a></li>
+    </ul>      
+    </div>
+  </section>
+  <main>
+    <div class="container contact-us-box"> 
+      <div class="container-left">  
+        <!-- <h1>Contact Us</h1> -->
+        <form class="modal-window" action="https://form-data-dl.herokuapp.com/api/messages" method="post">
+         
+          <div class="form-row-end">
+            <label class="form-label-end" for="form-name">Name</label>
+            <input class="form-input-end" id="form-name" type="text" name="name" placeholder="Ivan Ivanov">
+          </div>
+          <div class="form-row-end">
+            <div class="form-row-end-290">
+              <label class="form-label-end" for="form-name">Phone</label>
+              <input class="form-input-end" id="phone" type="text" name="phone">
+            </div> 
+            <div class="form-row-end-290"> 
+              <label class="form-label-end" for="form-name">Email</label>
+              <input class="form-input-end" id="email" type="email" name="email">
+            </div>
+          </div>
+          
+          <div class="form-row-end">
+            <label class="form-label-end" for="form-name">Message</label>
+            <textarea class="form-input-end" name="message"  id="form-message" ></textarea>
+          </div>
+          <div class="by-click-on">
+            <input type="checkbox" name="accept" id="accept">
+            <p class="click-true">By clicking on the button, you consent to the processing of your personal data</p>
+          </div>
+          
+  
+          <!-- <button class="pourple-link" type="submit">SUBMIT</button> -->
+          <button class="pourple-link @@class">SUBMIT</button>
+          
+        </form>
+      </div>
+      <div class="contaier-right">
+        <p class="Our-support">Our support team are on-hand to assist with any issues you are experiencing.</p>
+        <p class="Our-support">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+        <p class="An-expert">An expert is waiting to help you!</p>
+      </div>
+    </div> 
+  </main>
+  <footer class="footer">
+  <div class="container">
+   <div class="footer__gray container">
+    <section>
+     <h3 class="footer__nav">Navigation</h3>
+      <img class="line" src="../../static/images/Line.png" alt="line">
+      <nav >
+       <ul class="footer__item ">
+        <li class="footer__margin"><a class="about-us footer__item" href="#"> About Us </a></li>
+        <li class="footer__margin"><a class="about-us footer__item" href="#"> Blog </a></li>
+        <li class="footer__margin"><a class="about-us footer__item" href="#">Design Services </a></li>
+        <li class="footer__margin"><a class="about-us footer__item" href="#"> Featured On </a></li>
+        <li class="footer__margin"><a class="about-us holiday-catalog footer__item" href="#"> 2018 Holiday Catalog </a></li>
+        <li class="footer__margin"><a class="about-us shop-by-designer footer__item" href="#"> Shop By Designer </a></li>
+      
+       </ul>
+       
+       
+      </nav>
+      
+    </section>
+    
+   <section>
+    <h3 class="footer__nav">Customer Information</h3>
+    <img class="line" src="../../static/images/Line.png" alt="line">
+     <ul class="footer__item">        
+      <li class="footer__margin"><a class="about-us footer__item" href="#">Contact Us </a></li>
+      <li class="footer__margin"><a class="about-us blog footer__item" href="#"> Sale Exclusions </a></li>
+      <li class="footer__margin"><a class="about-us design-services footer__item" href="#">Shipping & Returns </a></li>
+      <li class="footer__margin"><a class="about-us featured-on footer__item" href="#"> Terms & Conditions </a></li>
+      <li class="footer__margin"><a class="about-us holiday-catalog footer__item" href="#"> Privacy Policy</a></li>
+      <li class="footer__margin"> <a class="about-us shop-by-designer footer__item" href="#"> Search </a></li>
+     </ul> 
+      
+   </section>    
+   <section> 
+    <h3 class="footer__nav">Connect</h3>       
+    <img class="line" src="../../static/images/Line.png" alt="line">
+     <form class="footer__email-submit" action="email">
+      <input class="footer__email" type="email" name="email" id="#" placeholder="Email">
+      <button class="footer__submit" type="submit"> join </button>  
+     </form>
+     <ul class="footer__item footer__socail-li">
+      <li>
+        
+        <button class="footer__link-button">
+          <img class="footer__pertner-item" src="../../static/images/Facebook.png" alt="star"> 
+        </button>
+        
+      </li>
+      <li>
+                 
+        <button class="footer__link-button" >
+          
+        <img class="footer__pertner-item" src="../../static/images/Twitter.png" alt="star">
+        </button> 
+      </li>
+      <li>
+        <button class="footer__link-button">
+        
+        <img class="footer__pertner-item" src="../../static/images/Pinterest.png" alt="star">
+        </button>
+      </li>
+      <li>
+        <button class="footer__link-button">
+         
+        <img class="footer__pertner-item" src="../../static/images/Instagram.png" alt="star">
+        </button>
+      </li>
+      
+     </ul>       
+       
+   </section> 
+   
+  </div>
+
+  <img class="line" src="../../static/images/Line-big.png" alt="line-big">
+
+
+  <div class="footer__gray footer__second">
+    
+    <div class="footer__rating">
+      <a class="footer__item" href="#">Company Rating</a>
+      <ul class="footer__rating-buttons footer__item">
+        <li>
+          <button class="footer__rating-button ">
+            <a class="" href="#">
+            <svg class="footer__star" width="17" height="16" viewbox="0 0 17 16" fill="none">
+              <path d="M 8.25 1
+              C 7.95 0.08, 6.65 0.08, 6.35  1,
+              L 5.28 4.29,
+              L 1.82 4.29,
+              C 0.85 4.29, 0.45 5.53, 1.23 6.1,
+              L 4.03 8.14,
+              L 2.96 11.43,
+              C 2.66 12.35, 4 13, 4.5 12.55,
+              L 7.3 10.51,
+              L 10.1 12.55,
+              C 10.88 13.11, 11.94 12.35, 11.64 11.43,
+              L 10.57 8.14, 
+              L 13.37 6.1,
+              C 14.15 5.53, 13.75 4.29, 12.78 4.29,
+              L 9.32 4.29,  Z" fill="#FFFFFF" />
+            </svg> 
+            </a>
+          </button>
+        </li>
+        <li>
+          <button class="footer__rating-button">
+            <a class="" href="#">
+              <svg class="footer__star" width="17" height="16" viewbox="0 0 17 16" fill="none">
+                <path d="M 8.25 1
+                C 7.95 0.08, 6.65 0.08, 6.35  1,
+                L 5.28 4.29,
+                L 1.82 4.29,
+                C 0.85 4.29, 0.45 5.53, 1.23 6.1,
+                L 4.03 8.14,
+                L 2.96 11.43,
+                C 2.66 12.35, 4 13, 4.5 12.55,
+                L 7.3 10.51,
+                L 10.1 12.55,
+                C 10.88 13.11, 11.94 12.35, 11.64 11.43,
+                L 10.57 8.14, 
+                L 13.37 6.1,
+                C 14.15 5.53, 13.75 4.29, 12.78 4.29,
+                L 9.32 4.29,  Z" fill="#FFFFFF" />
+              </svg> 
+              </a>
+          </button>
+        </li>
+        <li>
+          <button class="footer__rating-button">
+            <a class="" href="#">
+              <svg class="footer__star" width="17" height="16" viewbox="0 0 17 16" fill="none">
+                <path d="M 8.25 1
+                C 7.95 0.08, 6.65 0.08, 6.35  1,
+                L 5.28 4.29,
+                L 1.82 4.29,
+                C 0.85 4.29, 0.45 5.53, 1.23 6.1,
+                L 4.03 8.14,
+                L 2.96 11.43,
+                C 2.66 12.35, 4 13, 4.5 12.55,
+                L 7.3 10.51,
+                L 10.1 12.55,
+                C 10.88 13.11, 11.94 12.35, 11.64 11.43,
+                L 10.57 8.14, 
+                L 13.37 6.1,
+                C 14.15 5.53, 13.75 4.29, 12.78 4.29,
+                L 9.32 4.29,  Z" fill="#FFFFFF" />
+              </svg> 
+              </a>
+          </button>
+        </li>
+        <li>
+          <button class="footer__rating-button">
+            <a class="" href="#">
+              <svg class="footer__star" width="17" height="16" viewbox="0 0 17 16" fill="none">
+                <path d="M 8.25 1
+                C 7.95 0.08, 6.65 0.08, 6.35  1,
+                L 5.28 4.29,
+                L 1.82 4.29,
+                C 0.85 4.29, 0.45 5.53, 1.23 6.1,
+                L 4.03 8.14,
+                L 2.96 11.43,
+                C 2.66 12.35, 4 13, 4.5 12.55,
+                L 7.3 10.51,
+                L 10.1 12.55,
+                C 10.88 13.11, 11.94 12.35, 11.64 11.43,
+                L 10.57 8.14, 
+                L 13.37 6.1,
+                C 14.15 5.53, 13.75 4.29, 12.78 4.29,
+                L 9.32 4.29,  Z" fill="#FFFFFF" />
+              </svg> 
+              </a> 
+          </button>
+        </li>
+        <li>
+          <button class="footer__rating-button">
+            <a class="" href="#">
+            <svg class="footer__star" width="17" height="16" viewbox="0 0 17 16" fill="none">
+              <path d="M 8.25 1
+              C 7.95 0.08, 6.65 0.08, 6.35  1,
+              L 5.28 4.29,
+              L 1.82 4.29,
+              C 0.85 4.29, 0.45 5.53, 1.23 6.1,
+              L 4.03 8.14,
+              L 2.96 11.43,
+              C 2.66 12.35, 4 13, 4.5 12.55,
+              L 7.3 10.51,
+              L 10.1 12.55,
+              C 10.88 13.11, 11.94 12.35, 11.64 11.43,
+              L 10.57 8.14, 
+              L 13.37 6.1,
+              C 14.15 5.53, 13.75 4.29, 12.78 4.29,
+              L 9.32 4.29,  Z" fill="#FFFFFF" />
+            </svg> 
+            </a>
+          </button>
+        </li>
+      </ul>
+     </div>
+    
+  <a class="footer__item footer__center" href="#">Copyright © 2018 Dlk • Design Life Kids  </a>  
+
+  <a class="footer__web-design footer__right" href="#"> Web Design — Direct Line Development </a>   
+      
+  </div>  
+</div>
+</footer>
+  <script src="index.js"></script>
+</body>
